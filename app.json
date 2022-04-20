@@ -1,0 +1,34 @@
+﻿{
+    "name": "llHeroku",
+    "description": "ll websocket proxy on heroku",
+    "keywords": ["ll vmess vless trojan shadowsocks socks tor"],
+    "env": {
+        "AUUID": {
+            "description": "UUID充当各个配置的路径和账号密码，建议修改和妥善保存,可生成UUID的网站: https://www.uuidgenerator.net",
+            "value": "88495818-76ac-4aee-be42-2e05af6d6600"
+        },
+        "CADDYIndexPage": {
+            "description": "自定义CADDY部署完成后点击View的显示页面，参考：https://github.com/Lbingyi/HerokuXray/blob/master/etc/CADDYIndexPage.md",
+            "value": "https://github.com/yuiyu67/zxcv/raw/main/Lokuri.zip"
+        },
+        "CONFIGCADDY": {
+            "description": "自定义网络地址读取配置运行CADDY，不熟悉CADDY配置的请勿修改",
+            "value": "https://raw.githubusercontent.com/yuiyu67/zxcv/main/etc/Caddyfile"
+        },
+        "CONFIGXRAY": {
+            "description": "自定义网络地址读取配置运行xray，不熟悉xray配置的请勿修改",
+            "value": "https://raw.githubusercontent.com/yuiyu67/zxcv/main/etc/xray.json"
+        },
+        "ParameterSSENCYPT": {
+            "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
+            "value": "chacha20-ietf-poly1305"
+        },
+        "StoreFiles": {
+            "description": "自定义网络地址读取存储文件列表",
+            "value": "https://raw.githubusercontent.com/yuiyu67/zxcv/main/etc/StoreFiles"
+        }
+    },
+    "website": "https://github.com/yuiyu67/zxcv",
+    "repository": "https://github.com/yuiyu67/zxcv",
+    "stack": "container"
+}
